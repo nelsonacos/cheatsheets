@@ -7,7 +7,6 @@ Version: 1.0
 Created: Noviembre 2018
 License URI:http://nelsonacosta.cl/
 File Description:Main CSS file of the template */
-
 /* TABLE OF CONTENTS
 
 1) Variables
@@ -18,12 +17,8 @@ cheatsheets etc )
 5) Template Components
 6) Navigations
 * */
-
 /* 1 Variables
 ----------------------------------------------------------------------------- */
-
-$nafontFamily: "Ubuntu", sans-serif;
-
 /* 2 Typography
 ----------------------------------------------------------------------------- */
 html {
@@ -31,7 +26,7 @@ html {
 }
 
 body {
-  font-family: $nafontFamily;
+  font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -43,11 +38,13 @@ p {
   font-weight: 500;
   margin-bottom: 20px;
 }
+
 /* Miscellaneous
 ---------------------------------- */
 .pl-0 {
   padding-left: 0px;
 }
+
 .pl-5 {
   padding-left: 5px;
 }
@@ -79,6 +76,7 @@ p {
 .mt-0 {
   margin-top: 0px;
 }
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -151,10 +149,8 @@ p {
 ----------------------------------------------------------------------------- */
 /* Backgrounds
 ---------------------------------- */
-
 /* Footer
 ---------------------------------- */
-
 .footer {
   border-top: 2px solid blue;
   padding-top: 20px;
@@ -172,11 +168,18 @@ p {
 .footer {
   width: 100%;
 }
+
 .footer .credits {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: blue;
 }
 
@@ -195,17 +198,12 @@ p {
 /* Header
 ------------------ */
 .index .header-index {
-  background: #000046; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1cb5e0,
-    #000046
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #1cb5e0,
-    #000046
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000046;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#1cb5e0), to(#000046));
+  background: linear-gradient(to right, #1cb5e0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   width: 100%;
   padding: 72px 0;
@@ -213,14 +211,14 @@ p {
 
 /* Main Section
 ------------------ */
-
 .card-item {
   background-color: #e4e7f1;
   color: gray;
   padding: 10px 20px;
   margin-left: 0.5px;
   margin-right: 0.5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   display: block;
 }
 
@@ -240,3 +238,4 @@ p {
 
 /* 6 Navigations
 ----------------------------------------------------------------------------- */
+/*# sourceMappingURL=style.css.map */
